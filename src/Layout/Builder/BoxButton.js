@@ -5,6 +5,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import TextFieldsIcon from "@material-ui/icons/TextFields";
 
 const useStyles = makeStyles({
   root: {
@@ -16,7 +17,13 @@ const useStyles = makeStyles({
     transform: "scale(0.8)",
   },
   title: {
-    fontSize: 14,
+    fontSize: 45,
+  },
+  titleContent: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexWrap: "wrap",
   },
   pos: {
     marginBottom: 12,
@@ -31,11 +38,12 @@ export default function OutlinedCard() {
     <Card className={classes.root} variant="outlined">
       <CardContent>
         <Typography
-          className={classes.title}
           color="textSecondary"
+          className={classes.titleContent}
           gutterBottom
         >
-          Word of the Day
+          <TextFieldsIcon className={classes.title} />
+          Text Input
         </Typography>
       </CardContent>
     </Card>

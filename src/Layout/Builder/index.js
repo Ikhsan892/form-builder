@@ -18,7 +18,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
   },
   containLeft: {
-    margin: 20,
+    padding: 20,
+    width: "100%",
   },
   buttons: {
     marginTop: 5,
@@ -40,6 +41,12 @@ export default function SimplePaper() {
           </Typography>
           <Divider />
           <div className={classes.buttons}>
+            <BoxButton />
+            <BoxButton />
+            <BoxButton />
+            <BoxButton />
+            <BoxButton />
+            <BoxButton />
             <BoxButton />
             <BoxButton />
           </div>
